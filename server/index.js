@@ -16,6 +16,8 @@ massive(CONNECTION_STRING)
     console.log(error);
 })
 
+// express.static(`${__dirname}/../../build`);
+
 app.use(express.json());
 
 app.get('/api/groducts', getAll);
